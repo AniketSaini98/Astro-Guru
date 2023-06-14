@@ -1,0 +1,37 @@
+.links-container {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .links-list {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .link-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .link-icon {
+    margin-right: 5px;
+  }
+  
+  /* Styles for links on the left side */
+  .links-list li:nth-child(-n + 4) {
+    order: 1; /* Change the order to display on the left side */
+  }
+  
+  /* Styles for links on the right side */
+  .links-list li:nth-last-child(-n + 2) {
+    order: 2; /* Change the order to display on the right side */
+  }
+  
+  /* Additional styles for icon appearance */
+  .link-icon.fa {
+    font-size: 16px;
+  }
+  
